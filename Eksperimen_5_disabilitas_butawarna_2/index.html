@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulasi Buta Warna</title>
+</head>
+<body>
+    <header>
+        <h1>Simulasi Buta Warna</h1>
+    </header>
+    <main>
+        <div class="color-scheme-selector">
+            <button id="protanopia-toggle" onclick="applyColorblindMode('protanopia')">Protanopia</button>
+            <button id="deuteranopia-toggle" onclick="applyColorblindMode('deuteranopia')">Deuteranopia</button>
+            <button id="tritanopia-toggle" onclick="applyColorblindMode('tritanopia')">Tritanopia</button>
+            <button id="achromatopsia-toggle" onclick="applyColorblindMode('achromatopsia')">Achromatopsia</button>
+            <button id="reset" onclick="resetColorblindMode()">Reset</button>
+        </div>
+        <div class="color-slider">
+            <label for="base-color">Pilih Warna Dasar: </label>
+            <input type="color" id="base-color" value="#007bff" onchange="updateBaseColor(this.value)">
+        </div>
+        
+        <p>
+            Lihat bagaimana tampilan ini berubah ketika mode buta warna diaktifkan.
+        </p>
+
+        <div class="colorblind-descriptions">
+            <p><strong>Protanopia (Buta Merah):</strong> Kesulitan membedakan warna merah dan hijau. Warna merah tampak lebih gelap dan bisa terlihat seperti cokelat gelap atau abu-abu.</p>
+            <p><strong>Deuteranopia (Buta Hijau):</strong> Kesulitan membedakan warna hijau dan merah. Warna hijau sering kali terlihat lebih kusam atau kuning.</p>
+            <p><strong>Tritanopia (Buta Biru-Kuning):</strong> Kesulitan membedakan antara warna biru dan kuning. Warna biru bisa terlihat sebagai hijau dan kuning sebagai ungu atau abu-abu.</p>
+            <p><strong>Achromatopsia (Buta Warna Total):</strong> Tidak bisa melihat warna sama sekali, hanya melihat nuansa abu-abu, putih, dan hitam.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Desain Aksesibilitas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

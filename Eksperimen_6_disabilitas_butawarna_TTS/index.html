@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Experiment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+        <p class="text-lg font-semibold mb-4">Hover over the text below to hear it read aloud:</p>
+        <!-- Contoh kalimat dalam berbagai bahasa -->
+        <div class="text-hover bg-blue-200 p-4 rounded cursor-pointer hover:bg-blue-300 mb-2" data-lang="en-US" data-text="Hello, how are you today?">
+            Hello, how are you today?
+        </div>
+        <div class="text-hover bg-blue-200 p-4 rounded cursor-pointer hover:bg-blue-300 mb-2" data-lang="es-ES" data-text="Hola, ¿cómo estás hoy?">
+            Hola, ¿cómo estás hoy?
+        </div>
+        <div class="text-hover bg-blue-200 p-4 rounded cursor-pointer hover:bg-blue-300 mb-2" data-lang="fr-FR" data-text="Bonjour, comment ça va aujourd'hui?">
+            Bonjour, comment ça va aujourd'hui?
+        </div>
+        <div class="text-hover bg-blue-200 p-4 rounded cursor-pointer hover:bg-blue-300 mb-2" data-lang="id-ID" data-text="Halo, bagaimana kabarmu hari ini?">
+            Halo, bagaimana kabarmu hari ini?
+        </div>
+        <div class="text-hover bg-blue-200 p-4 rounded cursor-pointer hover:bg-blue-300 mb-2" data-lang="ja-JP" data-text="こんにちは、お元気ですか？">
+            こんにちは、お元気ですか？
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
